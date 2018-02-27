@@ -12,6 +12,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
 const index = require('./routes/index');
+const auth = require('./routes/auth');
 const warehouses = require('./routes/warehouses');
 
 const app = express();
@@ -52,6 +53,7 @@ app.use(cors({
 }));
 
 app.use('/', index);
+app.use('/auth', auth);
 app.use('/warehouses', warehouses);
 
 // -- error handlers
@@ -67,7 +69,7 @@ app.use((err, req, res, next) => {
 
   // only render if the error ocurred before sending the response
   if (!res.headersSent) {
-    res.status(500).json({ error: 'unexpected 505' });
+    res.status(500).json({ error: 'unexpected' });
   }
 });
 

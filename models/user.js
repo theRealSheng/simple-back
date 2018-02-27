@@ -2,27 +2,27 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-  Username: {
+  username: {
     type: String,
     required: true
   },
-  Password: {
+  password: {
     type: String,
     required: true
   },
-  CompanyName: {
+  companyName: {
     type: String,
-    required: true
+    required: false
   },
-  CompanyAddress: {
+  companyAddress: {
     type: String,
-    required: true
+    required: false
   },
-  Email: {
+  email: {
     type: String,
-    required: true
+    required: false
   },
-  Role: {
+  role: {
     type: String,
     enum: ['SELLER', 'OWNER']
   }
