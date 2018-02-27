@@ -8,9 +8,11 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const index = require('./routes/index');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+
+const index = require('./routes/index');
+const warehouses = require('/routes/warehouses');
 
 const app = express();
 
@@ -50,6 +52,7 @@ app.use(cors({
 }));
 
 app.use('/', index);
+app.use('/warehouses', warehouses);
 
 // -- error handlers
 
