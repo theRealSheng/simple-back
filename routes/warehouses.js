@@ -10,3 +10,5 @@ router.get('/', (res, req, next) => {
     .then(warehouse => res.json(warehouse))
     .catch(next);
 });
+
+module.exports = router;
