@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.Types.ObjectId;
 
 const WarehouseCardSchema = new Schema({
-  OwnerID: {
+  ownerID: {
     type: ObjectId,
     ref: 'User'
   },
@@ -11,17 +11,21 @@ const WarehouseCardSchema = new Schema({
     type: String,
     required: true
   },
-  WarehouseAddress: {
+  warehouseAddress: {
     type: String,
     required: true
   },
-  Pricing: {
+  pricing: {
     type: String,
     required: true
   },
-  SpecialNotes: {
+  specialNotes: {
     type: String,
     required: true
+  },
+  description: {
+    type: String,
+    required: false
   }
 });
 

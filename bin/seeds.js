@@ -18,7 +18,8 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     companyName: 'Simple Linear',
 //     companyAddress: '999 Pamplona, Bacelona',
 //     email: 'Jana@awesome.com',
-//     role: 'SELLER'
+//     role: 'SELLER',
+//     description: 'Founded in 1800, we are leading online seller for erotic items'
 //   },
 //   {
 //     username: 'SHENG',
@@ -26,7 +27,8 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     companyName: 'Simple Linear',
 //     companyAddress: '999 Pamplona, Bacelona',
 //     email: 'Sheng@awesome.com',
-//     role: 'SELLER'
+//     role: 'SELLER',
+//     description: 'Founded in 2000, we are leading online seller for books'
 //   },
 //   {
 //     username: 'Danielle',
@@ -34,7 +36,8 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     companyName: 'None Logistics',
 //     companyAddress: '0 Supply, Bacelona',
 //     email: 'Danielle@awesome.com',
-//     role: 'OWNER'
+//     role: 'OWNER',
+//     description: 'Founded in 2005, we are leading online seller for chargers'
 //   },
 //   {
 //     username: 'Santi',
@@ -42,7 +45,8 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     companyName: 'Super Logistics',
 //     companyAddress: '8 Super Logistics, Bacelona',
 //     email: 'Santi@awesome.com',
-//     role: 'OWNER'
+//     role: 'OWNER',
+//     description: 'Founded in 2008, we are leading online seller for laptops'
 //   },
 //   {
 //     username: 'Stephi',
@@ -50,31 +54,36 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     companyName: 'All Logistics',
 //     companyAddress: '1 Logistics, Bacelona',
 //     email: 'Stephi@awesome.com',
-//     role: 'OWNER'
+//     role: 'OWNER',
+//     description: 'Founded in 2017, we are leading online seller for chairs'
 //   }
 // ];
 
 const warehouses = [
   {
-    OwnerID: '5a957a14a8c3d1eabd65d15a',
+    ownerID: '5a96a93f54cb7904c9bcbdd2',
     companyName: 'None Logistics',
-    WarehouseAddress: '0 Supply, Bacelona',
-    Pricing: 'Very Expensive',
-    SpecialNotes: 'Only rich customers'
+    warehouseAddress: '0 Supply, Bacelona',
+    pricing: 'Very Expensive',
+    specialNotes: 'Only rich customers',
+    description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
+
   },
   {
-    OwnerID: '5a957a14a8c3d1eabd65d15b',
+    ownerID: '5a96a93f54cb7904c9bcbdd3',
     companyName: 'Super Logistics',
-    WarehouseAddress: '8 Super Logistics, Bacelona',
-    Pricing: 'Very Cheap',
-    SpecialNotes: 'Only cheap customers'
+    warehouseAddress: '8 Super Logistics, Bacelona',
+    pricing: 'Very Cheap',
+    specialNotes: 'Only cheap customers',
+    description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
   },
   {
-    OwnerID: '5a957a14a8c3d1eabd65d15c',
+    ownerID: '5a96a93f54cb7904c9bcbdd4',
     companyName: 'All Logistics',
-    WarehouseAddress: '1 Logistics, Bacelona',
-    Pricing: 'Super Mega expensive',
-    SpecialNotes: 'I take any customer'
+    warehouseAddress: '1 Logistics, Bacelona',
+    pricing: 'Super Mega expensive',
+    specialNotes: 'I take any customer',
+    description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
   }
 ];
 

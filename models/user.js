@@ -25,6 +25,10 @@ const UserSchema = new Schema({
   role: {
     type: String,
     enum: ['SELLER', 'OWNER']
+  },
+  description: {
+    type: String,
+    required: false
   }
 });
 
