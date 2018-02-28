@@ -7,6 +7,10 @@ const WarehouseCardSchema = new Schema({
     type: ObjectId,
     ref: 'User'
   },
+  companyName: {
+    type: String,
+    required: true
+  },
   WarehouseAddress: {
     type: String,
     required: true
