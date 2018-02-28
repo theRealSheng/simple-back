@@ -14,7 +14,7 @@ const MongoStore = require('connect-mongo')(session);
 const index = require('./routes/index');
 const auth = require('./routes/auth');
 const warehouses = require('./routes/warehouses');
-const profile = require('./routes/profile');
+const user = require('./routes/user');
 
 const app = express();
 
@@ -56,7 +56,7 @@ app.use(cors({
 app.use('/', index);
 app.use('/auth', auth);
 app.use('/warehouses', warehouses);
-app.use('/user', profile);
+app.use('/user', user);
 
 // -- error handlers
 
