@@ -11,4 +11,10 @@ router.get('/', (req, res, next) => {
     .catch(next);
 });
 
+router.get('/:id', (req, res, next) => {
+  Warehouse.findById(req.params.id)
+    .then((warehouse) => res.json(warehouse))
+    .catch(next);
+});
+
 module.exports = router;
