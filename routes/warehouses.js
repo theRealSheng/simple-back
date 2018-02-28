@@ -5,10 +5,10 @@ const express = require('express');
 const router = express.Router();
 const Warehouse = require('../models/warehouseCard');
 
-router.get('/', (res, req, next) => {
+router.get('/', (req, res, next) => {
   Warehouse.find({}, (err, warehouses) => {
     if (err) {
-      return res.json(err).status(500);
+      return next(err);
     }
     return res.json(warehouses);
   });
