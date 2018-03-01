@@ -11,7 +11,6 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   const event = req.body;
-
   const newBooking = Booking({
     warehouseAddress: event.warehouseAddress,
     seller: event.seller,
