@@ -1,12 +1,10 @@
-
 'use strict';
 
 const express = require('express');
 const router = express.Router();
 
-/* GET home page. */
-router.get('/', (req, res, next) => {
-  res.json('index');
+router.get('/:id', (req, res, next) => {
+  res.json('Dashboard');
 });
 
 module.exports = router;

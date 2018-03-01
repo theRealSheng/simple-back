@@ -1,8 +1,8 @@
 
 const mongoose = require('mongoose');
-const Warehouse = require('../models/warehouseCard');
+// const Warehouse = require('../models/warehouseCard');
 // const User = require('../models/user');
-
+const Booking = require('../models/booking');
 const dbName = 'Simple-Linear';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
@@ -59,40 +59,100 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //   }
 // ];
 
-const warehouses = [
-  {
-    ownerID: '5a96a93f54cb7904c9bcbdd2',
-    companyName: 'None Logistics',
-    warehouseAddress: '0 Supply, Bacelona',
-    pricing: 'Very Expensive',
-    specialNotes: 'Only rich customers',
-    description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
+// const warehouses = [
+//   {
+//     ownerID: '5a96a93f54cb7904c9bcbdd2',
+//     companyName: 'None Logistics',
+//     warehouseAddress: '0 Supply, Bacelona',
+//     pricing: 'Very Expensive',
+//     specialNotes: 'Only rich customers',
+//     description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
 
-  },
-  {
-    ownerID: '5a96a93f54cb7904c9bcbdd3',
-    companyName: 'Super Logistics',
-    warehouseAddress: '8 Super Logistics, Bacelona',
-    pricing: 'Very Cheap',
-    specialNotes: 'Only cheap customers',
-    description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
-  },
-  {
-    ownerID: '5a96a93f54cb7904c9bcbdd4',
-    companyName: 'All Logistics',
-    warehouseAddress: '1 Logistics, Bacelona',
-    pricing: 'Super Mega expensive',
-    specialNotes: 'I take any customer',
-    description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
-  }
-];
+//   },
+//   {
+//     ownerID: '5a96a93f54cb7904c9bcbdd3',
+//     companyName: 'Super Logistics',
+//     warehouseAddress: '8 Super Logistics, Bacelona',
+//     pricing: 'Very Cheap',
+//     specialNotes: 'Only cheap customers',
+//     description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
+//   },
+//   {
+//     ownerID: '5a96a93f54cb7904c9bcbdd4',
+//     companyName: 'All Logistics',
+//     warehouseAddress: '1 Logistics, Bacelona',
+//     pricing: 'Super Mega expensive',
+//     specialNotes: 'I take any customer',
+//     description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
+//   }
+// ];
 
-Warehouse.create(warehouses, (err) => {
-  if (err) { throw (err); }
-  console.log(`Created ${warehouses.length} warehouses`);
-});
+// const bookings = [
+//   {
+//     companyName: 'None Logistics',
+//     warehouseAddress: '0 Supply, Bacelona',
+//     seller: '',
+//     productName: 'Only rich customers',
+//     dimsWeight: '2000 pcs: 30W x 40L x 50H cm ',
+//     packCargo: 'Pallet',
+//     hazmat: 'False',
+//     expectedVolWeightShip: 'a lot cargo',
+//     expectedVolWeightMonth: '30 CBBM',
+//     expTurnOver: 7,
+//     enterDate: ''
+//   },
+//   {
+//     companyName: 'Super Logistics',
+//     warehouseAddress: '8 Super Logistics, Bacelona',
+//     seller: 'Very Expensive',
+//     productName: 'Only rich customers',
+//     dimsWeight: '2000 pcs: 30W x 40L x 50H cm ',
+//     packCargo: 'Pallet',
+//     hazmat: 'False',
+//     expectedVolWeightShip: 'a lot cargo',
+//     expectedVolWeightMonth: '30 CBBM',
+//     expTurnOver: 7,
+//     enterDate: ''
+//   },
+//   {
+//     companyName: 'Super Logistics',
+//     warehouseAddress: '8 Super Logistics, Bacelona',
+//     seller: 'Very Expensive',
+//     productName: 'Only rich customers',
+//     dimsWeight: '2000 pcs: 30W x 40L x 50H cm ',
+//     packCargo: 'Pallet',
+//     hazmat: 'False',
+//     expectedVolWeightShip: 'a lot cargo',
+//     expectedVolWeightMonth: '30 CBBM',
+//     expTurnOver: 7,
+//     enterDate: ''
+//   },
+//   {
+//     companyName: 'None Logistics',
+//     warehouseAddress: '0 Supply, Bacelona',
+//     seller: 'Very Expensive',
+//     productName: 'Only rich customers',
+//     dimsWeight: '2000 pcs: 30W x 40L x 50H cm ',
+//     packCargo: 'Pallet',
+//     hazmat: 'False',
+//     expectedVolWeightShip: 'a lot cargo',
+//     expectedVolWeightMonth: '30 CBBM',
+//     expTurnOver: 7,
+//     enterDate: ''
+//   }
+// ];
+
+// Warehouse.create(warehouses, (err) => {
+//   if (err) { throw (err); }
+//   console.log(`Created ${warehouses.length} warehouses`);
+// });
 
 // User.create(users, (err) => {
 //   if (err) { throw (err); }
 //   console.log(`Created ${users.length} users`);
+// });
+
+// Booking.create(bookings, (err) => {
+//   if (err) { throw (err); }
+//   console.log(`Created ${bookings.length} users`);
 // });

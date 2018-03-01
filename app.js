@@ -15,6 +15,8 @@ const index = require('./routes/index');
 const auth = require('./routes/auth');
 const warehouses = require('./routes/warehouses');
 const user = require('./routes/user');
+const dashboard = require('./routes/dashboard');
+const booking = require('./routes/booking');
 
 const app = express();
 
@@ -41,6 +43,11 @@ app.use(session({
   }
 }));
 
+app.use((req, res, next) => {
+  app.locals.user = req.session.currentUser;
+  next();
+});
+
 // -- Middlewares
 
 app.use(logger('dev'));
@@ -53,10 +60,13 @@ app.use(cors({
   origin: ['http://localhost:4200']
 }));
 
+// -- Routes
 app.use('/', index);
 app.use('/auth', auth);
 app.use('/warehouses', warehouses);
 app.use('/user', user);
+app.use('/dashboard', dashboard);
+app.use('/booking', booking);
 
 // -- error handlers
 

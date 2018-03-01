@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.Types.ObjectId;
 
 const BookingSchema = new Schema({
-  companyName: {
-    type: String,
-    required: true
-  },
   warehouseAddress: {
+    type: ObjectId,
+    ref: 'warehouseCard'
+  },
+  seller: {
     type: ObjectId,
     ref: 'User'
   },
@@ -31,10 +31,10 @@ const BookingSchema = new Schema({
     type: String
   },
   expTurnOver: {
-    type: String
+    type: Number
   },
   enterDate: {
-    type: String
+    type: Date
   }
 });
 
