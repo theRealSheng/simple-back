@@ -8,8 +8,7 @@ const WarehouseCardSchema = new Schema({
     ref: 'User'
   },
   companyName: {
-    type: String,
-    required: true
+    type: String
   },
   warehouseAddress: {
     type: String,
@@ -21,7 +20,7 @@ const WarehouseCardSchema = new Schema({
   },
   specialNotes: {
     type: String,
-    required: true
+    required: false
   },
   description: {
     type: String,
