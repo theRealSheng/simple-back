@@ -17,6 +17,7 @@ const warehouses = require('./routes/warehouses');
 const user = require('./routes/user');
 const dashboard = require('./routes/dashboard');
 const booking = require('./routes/booking');
+const uploads = require('./routes/uploads');
 
 const app = express();
 
@@ -67,6 +68,7 @@ app.use('/warehouses', warehouses);
 app.use('/user', user);
 app.use('/dashboard', dashboard);
 app.use('/booking', booking);
+app.use('/uploads', uploads);
 
 // -- error handlers
 
