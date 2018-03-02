@@ -25,6 +25,10 @@ const WarehouseCardSchema = new Schema({
   description: {
     type: String,
     required: false
+  },
+  picture: {
+    type: ObjectId,
+    ref: 'picture'
   }
 });
 
