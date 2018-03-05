@@ -32,6 +32,9 @@ const UserSchema = new Schema({
   },
   picture: {
     type: String
+  },
+  history: {
+    type: Object
   }
 });
 
