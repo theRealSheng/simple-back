@@ -2,8 +2,9 @@
 const mongoose = require('mongoose');
 // const Warehouse = require('../models/warehouseCard');
 // const User = require('../models/user');
-const Booking = require('../models/booking');
-const dbName = 'Simple-Linear';
+// const Booking = require('../models/booking');
+
+const dbName = 'simplelinearapi';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
 // const bcrypt = require('bcrypt');
@@ -59,6 +60,11 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //   }
 // ];
 
+// User.create(users, (err) => {
+//   if (err) { throw (err); }
+//   console.log(`Created ${users.length} users`);
+// });
+
 // const warehouses = [
 //   {
 //     ownerID: '5a96a93f54cb7904c9bcbdd2',
@@ -86,6 +92,11 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
 //   }
 // ];
+
+// Warehouse.create(warehouses, (err) => {
+//   if (err) { throw (err); }
+//   console.log(`Created ${warehouses.length} warehouses`);
+// });
 
 // const bookings = [
 //   {
@@ -141,16 +152,6 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //     enterDate: ''
 //   }
 // ];
-
-// Warehouse.create(warehouses, (err) => {
-//   if (err) { throw (err); }
-//   console.log(`Created ${warehouses.length} warehouses`);
-// });
-
-// User.create(users, (err) => {
-//   if (err) { throw (err); }
-//   console.log(`Created ${users.length} users`);
-// });
 
 // Booking.create(bookings, (err) => {
 //   if (err) { throw (err); }

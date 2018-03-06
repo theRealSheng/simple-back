@@ -24,10 +24,7 @@ const BookingSchema = new Schema({
   hazmat: {
     type: Boolean
   },
-  expectedVolWeightShip: {
-    type: String
-  },
-  expectedVolWeightMonth: {
+  pcs: {
     type: String
   },
   expTurnOver: {

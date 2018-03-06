@@ -14,10 +14,19 @@ const WarehouseCardSchema = new Schema({
     type: String,
     required: true
   },
-  pricing: {
-    type: String,
-    required: true
-  },
+  pricing: [
+    {
+      storage: {
+        type: Number
+      },
+      handling: {
+        type: [Number]
+      },
+      packaging: {
+        type: [Number]
+      }
+    }
+  ],
   specialNotes: {
     type: String,
     required: false
