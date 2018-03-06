@@ -1,3 +1,4 @@
+  {},
   {
     seller: '5a9e45d7a6c4cbba88e2f2ad',
     productName: 'SELFIE-STICK',
@@ -5,7 +6,7 @@
     dims: 0,
     weight: 200,
     hazmat: false,
-    salesDate: 20180106,
+    salesDate: 20180221,
     courier: 'CORREOS'
   },
   {
@@ -15,7 +16,7 @@
     dims: 1,
     weight: 200,
     hazmat: false,
-    salesDate: 20180106,
+    salesDate: 20180221,
     courier: 'CORREOS'
   },
   {
@@ -25,17 +26,7 @@
     dims: 2,
     weight: 1000,
     hazmat: true,
-    salesDate: 20180106,
-    courier: 'CORREOS'
-  },
-  {
-    seller: '5a9e45d7a6c4cbba88e2f2ad',
-    productName: 'HEADPHONES',
-    salesPrice: 70,
-    dims: 1,
-    weight: 500,
-    hazmat: false,
-    salesDate: 20180106,
+    salesDate: 20180221,
     courier: 'CORREOS'
   },
   {
@@ -45,6 +36,6 @@
     dims: 2,
     weight: 200,
     hazmat: true,
-    salesDate: 20180106,
+    salesDate: 20180221,
     courier: 'CORREOS'
-  }
+  },
