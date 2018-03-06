@@ -72,7 +72,7 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const warehouses = [
   {
-    ownerID: '5a96a93f54cb7904c9bcbdd2',
+    ownerID: '5a9eb6648a8fe8d4f50ed269',
     companyName: 'None Logistics',
     warehouseAddress: '0 Supply, Bacelona',
     pricing: [{
@@ -84,7 +84,7 @@ const warehouses = [
     description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
   },
   {
-    ownerID: '5a96a93f54cb7904c9bcbdd3',
+    ownerID: '5a9eb6648a8fe8d4f50ed26a',
     companyName: 'Super Logistics',
     warehouseAddress: '8 Super Logistics, Bacelona',
     pricing: [{
@@ -96,7 +96,7 @@ const warehouses = [
     description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
   },
   {
-    ownerID: '5a96a93f54cb7904c9bcbdd4',
+    ownerID: '5a9eb6648a8fe8d4f50ed26b',
     companyName: 'All Logistics',
     warehouseAddress: '1 Logistics, Bacelona',
     pricing: [{

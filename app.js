@@ -19,7 +19,6 @@ const user = require('./routes/user');
 const dashboard = require('./routes/dashboard');
 const booking = require('./routes/booking');
 const uploads = require('./routes/uploads');
-const sales = require('./routes/onlineSales');
 const app = express();
 
 // -- Set Database
@@ -70,7 +69,6 @@ app.use('/user', user);
 app.use('/dashboard', dashboard);
 app.use('/booking', booking);
 app.use('/uploads', uploads);
-app.use('/dashboard', sales);
 
 // -- error handlers
 
