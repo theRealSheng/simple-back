@@ -5,8 +5,9 @@ const router = express.Router();
 const OnlineSales = require('../models/onlineSale');
 
 router.get('/:id', (req, res, next) => {
-  OnlineSales.find({_id: req.params.id})
+  OnlineSales.find({seller: req.params.id})
     .then((sales) => {
+      console.log(sales);
       res.json(sales);
     }).catch(err => {
       return next(err);
