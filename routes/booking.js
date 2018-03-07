@@ -29,9 +29,11 @@ router.post('/', (req, res, next) => {
 });
 
 router.get('/:id', (req, res, next) => {
-  Booking.find({seller: req.params.id})
-    .then(booking => {
-      console.log(booking);
+  Booking.find({seller: req.params.id}).populate('warehouseAddress')
+    .exec((err, booking) => {
+      if (err) {
+        return next(err);
+      }
       res.json(booking);
     });
 });

@@ -5,7 +5,7 @@ const ObjectId = Schema.Types.ObjectId;
 const BookingSchema = new Schema({
   warehouseAddress: {
     type: ObjectId,
-    ref: 'warehouseCard'
+    ref: 'Warehouse'
   },
   seller: {
     type: ObjectId,
