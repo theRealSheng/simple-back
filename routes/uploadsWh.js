@@ -6,12 +6,13 @@ const upload = require('../configs/multer');
 
 router.post('/', upload.single('file'), (req, res, next) => {
   const picture = `/uploads/${req.file.filename}`;
+  const id = req.body.warehouseId;
   const updates = {
     $set: {
       picture: picture
     }
   };
-  Warehouse.findOneAndUpdate({ownerID: req.session.currentUser._id}, updates)
+  Warehouse.findByIdAndUpdate(id, updates)
     .then(() => {
       console.log('New pic added to warehouse profile', updates, req.session.currentUser._id);
       res.json({ picture });
