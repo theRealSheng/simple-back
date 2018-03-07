@@ -23,7 +23,7 @@ const OnlineSalesSchema = new Schema({
     type: Boolean
   },
   salesDate: {
-    type: String
+    type: Date
   },
   courier: {
     type: String
