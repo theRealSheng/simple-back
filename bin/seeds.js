@@ -7,68 +7,68 @@ const Booking = require('../models/booking');
 const dbName = 'simplelinearapi';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
-// const bcrypt = require('bcrypt');
-// const saltRounds = 10;
-// const salt = bcrypt.genSaltSync(saltRounds);
-// const p1234encrypted = bcrypt.hashSync('1234', salt);
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+const salt = bcrypt.genSaltSync(saltRounds);
+const p1234encrypted = bcrypt.hashSync('1234', salt);
 
-// const users = [
-//   {
-//     username: 'Jana',
-//     password: p1234encrypted,
-//     companyName: 'Simple Linear',
-//     companyAddress: '999 Pamplona, Bacelona',
-//     website: 'www.simplelinear.com',
-//     email: 'Jana@awesome.com',
-//     role: 'SELLER',
-//     description: 'Founded in 1800, we are leading online seller for erotic items'
-//   },
-//   {
-//     username: 'SHENG',
-//     password: p1234encrypted,
-//     companyName: 'Simple Linear',
-//     companyAddress: '999 Pamplona, Bacelona',
-//     website: 'www.simplelinear.com',
-//     email: 'Sheng@awesome.com',
-//     role: 'SELLER',
-//     description: 'Founded in 2000, we are leading online seller for books'
-//   },
-//   {
-//     username: 'Danielle',
-//     password: p1234encrypted,
-//     companyName: 'None Logistics',
-//     companyAddress: '0 Supply, Bacelona',
-//     website: 'www.nonelogistics.com',
-//     email: 'Danielle@awesome.com',
-//     role: 'OWNER',
-//     description: 'Founded in 2005, we are leading online seller for chargers'
-//   },
-//   {
-//     username: 'Santi',
-//     password: p1234encrypted,
-//     companyName: 'Super Logistics',
-//     companyAddress: '8 Super Logistics, Bacelona',
-//     website: 'www.superlogistics.com',
-//     email: 'Santi@awesome.com',
-//     role: 'OWNER',
-//     description: 'Founded in 2008, we are leading online seller for laptops'
-//   },
-//   {
-//     username: 'Stephi',
-//     password: p1234encrypted,
-//     companyName: 'All Logistics',
-//     companyAddress: '1 Logistics, Bacelona',
-//     website: 'www.alllogistics.com',
-//     email: 'Stephi@awesome.com',
-//     role: 'OWNER',
-//     description: 'Founded in 2017, we are leading online seller for chairs'
-//   }
-// ];
+const users = [
+  {
+    username: 'Jana',
+    password: p1234encrypted,
+    companyName: 'Simple Linear',
+    companyAddress: '999 Pamplona, Bacelona',
+    website: 'www.simplelinear.com',
+    email: 'Jana@awesome.com',
+    role: 'SELLER',
+    description: 'Founded in 1800, we are leading online seller for erotic items'
+  },
+  {
+    username: 'SHENG',
+    password: p1234encrypted,
+    companyName: 'Simple Linear',
+    companyAddress: '999 Pamplona, Bacelona',
+    website: 'www.simplelinear.com',
+    email: 'Sheng@awesome.com',
+    role: 'SELLER',
+    description: 'Founded in 2000, we are leading online seller for books'
+  },
+  {
+    username: 'Danielle',
+    password: p1234encrypted,
+    companyName: 'None Logistics',
+    companyAddress: '0 Supply, Bacelona',
+    website: 'www.nonelogistics.com',
+    email: 'Danielle@awesome.com',
+    role: 'OWNER',
+    description: 'Founded in 2005, we are leading online seller for chargers'
+  },
+  {
+    username: 'Santi',
+    password: p1234encrypted,
+    companyName: 'Super Logistics',
+    companyAddress: '8 Super Logistics, Bacelona',
+    website: 'www.superlogistics.com',
+    email: 'Santi@awesome.com',
+    role: 'OWNER',
+    description: 'Founded in 2008, we are leading online seller for laptops'
+  },
+  {
+    username: 'Stephi',
+    password: p1234encrypted,
+    companyName: 'All Logistics',
+    companyAddress: '1 Logistics, Bacelona',
+    website: 'www.alllogistics.com',
+    email: 'Stephi@awesome.com',
+    role: 'OWNER',
+    description: 'Founded in 2017, we are leading online seller for chairs'
+  }
+];
 
-// User.create(users, (err) => {
-//   if (err) { throw (err); }
-//   console.log(`Created ${users.length} users`);
-// });
+User.create(users, (err) => {
+  if (err) { throw (err); }
+  console.log(`Created ${users.length} users`);
+});
 
 // const warehouses = [
 //   {
