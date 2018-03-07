@@ -116,20 +116,17 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const bookings = [
   {
-
     warehouseAddress: '5a9eb6648a8fe8d4f50ed269',
     seller: '5a9eb986b872b4d61c4a4a18',
     productName: 'Electronics',
     dimsWeight: '15000-50',
-    packCargo: 
-      {pack: 'PALLETS',
-       packPcs: 30
-      },
+    packCargo: {pack: 'PALLETS', packPcs: 30},
     hazmat: 'true',
     pcs: 20000,
     expTurnOver: 7,
     enterDate: '2018-01-31'
-  }
+  }];
+
   // ,
 //   {
 //     companyName: 'Super Logistics',

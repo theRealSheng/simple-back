@@ -18,8 +18,13 @@ const BookingSchema = new Schema({
     type: String
   },
   packCargo: {
-    type: String,
-    enum: ['PALLETS', 'CARTONS', 'MIX']
+    pack: {
+      type: String,
+      enum: ['PALLETS', 'CARTONS', 'MIX']
+    },
+    packPcs: {
+      type: Number
+    }
   },
   hazmat: {
     type: Boolean
@@ -31,7 +36,7 @@ const BookingSchema = new Schema({
     type: Number
   },
   enterDate: {
-    type: Date
+    type: String
   }
 });
 
