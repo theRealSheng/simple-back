@@ -28,4 +28,12 @@ router.post('/', (req, res, next) => {
     .then(() => res.json(newBooking));
 });
 
+router.get('/:id', (req, res, next) => {
+  Booking.find({seller: req.params.id})
+    .then(booking => {
+      console.log(booking);
+      res.json(booking);
+    });
+});
+
 module.exports = router;
