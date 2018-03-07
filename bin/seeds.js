@@ -1,8 +1,8 @@
 
 const mongoose = require('mongoose');
-const Warehouse = require('../models/warehouseCard');
+// const Warehouse = require('../models/warehouseCard');
 // const User = require('../models/user');
-// const Booking = require('../models/booking');
+const Booking = require('../models/booking');
 
 const dbName = 'simplelinearapi';
 mongoose.connect(`mongodb://localhost/${dbName}`);
@@ -70,64 +70,67 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 //   console.log(`Created ${users.length} users`);
 // });
 
-const warehouses = [
-  {
-    ownerID: '5a9eb6648a8fe8d4f50ed269',
-    companyName: 'None Logistics',
-    warehouseAddress: '0 Supply, Bacelona',
-    pricing: [{
-      storage: 50,
-      handling: [0.50, 2, 5],
-      packaging: [0.30, 4, 10]
-    }],
-    specialNotes: 'Only rich customers',
-    description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
-  },
-  {
-    ownerID: '5a9eb6648a8fe8d4f50ed26a',
-    companyName: 'Super Logistics',
-    warehouseAddress: '8 Super Logistics, Bacelona',
-    pricing: [{
-      storage: 70,
-      handling: [0.70, 2.5, 6],
-      packaging: [0.50, 5, 12]
-    }],
-    specialNotes: 'Only cheap customers',
-    description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
-  },
-  {
-    ownerID: '5a9eb6648a8fe8d4f50ed26b',
-    companyName: 'All Logistics',
-    warehouseAddress: '1 Logistics, Bacelona',
-    pricing: [{
-      storage: 60,
-      handling: [0.40, 1.8, 5.5],
-      packaging: [0.60, 5.5, 11]
-    }],
-    specialNotes: 'I take any customer',
-    description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
-  }
-];
-
-Warehouse.create(warehouses, (err) => {
-  if (err) { throw (err); }
-  console.log(`Created ${warehouses.length} warehouses`);
-});
-
-// const bookings = [
+// const warehouses = [
 //   {
+//     ownerID: '5a9eb6648a8fe8d4f50ed269',
 //     companyName: 'None Logistics',
 //     warehouseAddress: '0 Supply, Bacelona',
-//     seller: '',
-//     productName: 'Only rich customers',
-//     dimsWeight: '2000 pcs: 30W x 40L x 50H cm ',
-//     packCargo: 'Pallet',
-//     hazmat: 'False',
-//     expectedVolWeightShip: 'a lot cargo',
-//     expectedVolWeightMonth: '30 CBBM',
-//     expTurnOver: 7,
-//     enterDate: ''
+//     pricing: [{
+//       storage: 50,
+//       handling: [0.50, 2, 5],
+//       packaging: [0.30, 4, 10]
+//     }],
+//     specialNotes: 'Only rich customers',
+//     description: 'Founded in 1980, we are one stop logistics for all. We focus on air shipments'
 //   },
+//   {
+//     ownerID: '5a9eb6648a8fe8d4f50ed26a',
+//     companyName: 'Super Logistics',
+//     warehouseAddress: '8 Super Logistics, Bacelona',
+//     pricing: [{
+//       storage: 70,
+//       handling: [0.70, 2.5, 6],
+//       packaging: [0.50, 5, 12]
+//     }],
+//     specialNotes: 'Only cheap customers',
+//     description: 'Founded in 1999, we are one stop logistics for all. We focus on ocean shipments'
+//   },
+//   {
+//     ownerID: '5a9eb6648a8fe8d4f50ed26b',
+//     companyName: 'All Logistics',
+//     warehouseAddress: '1 Logistics, Bacelona',
+//     pricing: [{
+//       storage: 60,
+//       handling: [0.40, 1.8, 5.5],
+//       packaging: [0.60, 5.5, 11]
+//     }],
+//     specialNotes: 'I take any customer',
+//     description: 'Founded in 2013, we are one stop logistics for all. We focus on air shipments'
+//   }
+// ];
+
+// Warehouse.create(warehouses, (err) => {
+//   if (err) { throw (err); }
+//   console.log(`Created ${warehouses.length} warehouses`);
+// });
+
+const bookings = [
+  {
+
+    warehouseAddress: '5a9eb6648a8fe8d4f50ed269',
+    seller: '5a9eb986b872b4d61c4a4a18',
+    productName: 'Electronics',
+    dimsWeight: '15000-50',
+    packCargo: 
+      {pack: 'PALLETS',
+       packPcs: 30
+      },
+    hazmat: 'true',
+    pcs: 20000,
+    expTurnOver: 7,
+    enterDate: '2018-01-31'
+  }
+  // ,
 //   {
 //     companyName: 'Super Logistics',
 //     warehouseAddress: '8 Super Logistics, Bacelona',
@@ -169,7 +172,7 @@ Warehouse.create(warehouses, (err) => {
 //   }
 // ];
 
-// Booking.create(bookings, (err) => {
-//   if (err) { throw (err); }
-//   console.log(`Created ${bookings.length} users`);
-// });
+Booking.create(bookings, (err) => {
+  if (err) { throw (err); }
+  console.log(`Created ${bookings.length} users`);
+});

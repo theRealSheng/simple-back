@@ -56019,7 +56019,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56048,7 +56048,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56077,7 +56077,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56106,7 +56106,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56135,7 +56135,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56164,7 +56164,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56193,7 +56193,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56222,7 +56222,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56251,7 +56251,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56280,7 +56280,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56309,7 +56309,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56338,7 +56338,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56367,7 +56367,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56396,7 +56396,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56425,7 +56425,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56454,7 +56454,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56483,7 +56483,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56512,7 +56512,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56541,7 +56541,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56570,7 +56570,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56599,7 +56599,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56628,7 +56628,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56657,7 +56657,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56686,7 +56686,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56715,7 +56715,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56744,7 +56744,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56773,7 +56773,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56802,7 +56802,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56831,7 +56831,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56860,7 +56860,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56889,7 +56889,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56918,7 +56918,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56947,7 +56947,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },  {
     seller: '5a9eb986b872b4d61c4a4a18',
@@ -56976,7 +56976,7 @@ const onlineSales = [
     dims: 1,
     weight: 700,
     hazmat: true,
-    salesDate: 2018020,
+    salesDate: '2018-02-21',
     courier: 'CORREOS'
   },
   {

@@ -25,7 +25,7 @@ const BookingSchema = new Schema({
     type: Boolean
   },
   pcs: {
-    type: String
+    type: Number
   },
   expTurnOver: {
     type: Number
