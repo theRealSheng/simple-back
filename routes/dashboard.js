@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const OnlineSales = require('../models/onlineSale');
+const OnlineSales = require('../models/OnlineSale');
 
 router.get('/:id', (req, res, next) => {
   OnlineSales.find({seller: req.params.id})
