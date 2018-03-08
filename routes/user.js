@@ -7,7 +7,9 @@ const User = require('../models/user');
 
 router.get('/:id', (req, res, next) => {
   User.findById(req.params.id)
-    .then((user) => res.json(user))
+    .then((user) => {
+      res.json(user);
+    })
     .catch(next);
 });
 

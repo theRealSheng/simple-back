@@ -5,7 +5,7 @@ const ObjectId = Schema.Types.ObjectId;
 const BookingSchema = new Schema({
   warehouseAddress: {
     type: ObjectId,
-    ref: 'warehouseCard'
+    ref: 'Warehouse'
   },
   seller: {
     type: ObjectId,
@@ -18,23 +18,25 @@ const BookingSchema = new Schema({
     type: String
   },
   packCargo: {
-    type: String,
-    enum: ['PALLETS', 'CARTONS', 'MIX']
+    pack: {
+      type: String,
+      enum: ['PALLETS', 'CARTONS', 'MIX']
+    },
+    packPcs: {
+      type: Number
+    }
   },
   hazmat: {
     type: Boolean
   },
-  expectedVolWeightShip: {
-    type: String
-  },
-  expectedVolWeightMonth: {
-    type: String
+  pcs: {
+    type: Number
   },
   expTurnOver: {
     type: Number
   },
   enterDate: {
-    type: Date
+    type: String
   }
 });
 

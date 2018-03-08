@@ -28,4 +28,14 @@ router.post('/', (req, res, next) => {
     .then(() => res.json(newBooking));
 });
 
+router.get('/:id', (req, res, next) => {
+  Booking.find({seller: req.params.id}).populate('warehouseAddress')
+    .exec((err, booking) => {
+      if (err) {
+        return next(err);
+      }
+      res.json(booking);
+    });
+});
+
 module.exports = router;

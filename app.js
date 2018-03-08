@@ -19,6 +19,7 @@ const user = require('./routes/user');
 const dashboard = require('./routes/dashboard');
 const booking = require('./routes/booking');
 const uploads = require('./routes/uploads');
+const uploadsWh = require('./routes/uploadsWh');
 
 const app = express();
 
@@ -70,6 +71,7 @@ app.use('/user', user);
 app.use('/dashboard', dashboard);
 app.use('/booking', booking);
 app.use('/uploads', uploads);
+app.use('/uploadsWh', uploadsWh);
 
 // -- error handlers
 
