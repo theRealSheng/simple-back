@@ -5,11 +5,19 @@ const router = express.Router();
 const Booking = require('../models/booking');
 
 router.get('/', (req, res, next) => {
+  if (!req.session.currentUser) {
+    return res.redirect('/auth/login');
+  }
+
   console.log('this is booking');
   res.json('Booking');
 });
 
 router.post('/', (req, res, next) => {
+  if (!req.session.currentUser) {
+    return res.redirect('/auth/login');
+  }
+
   const event = req.body;
   const newBooking = Booking({
     warehouseAddress: event.warehouseAddress,
@@ -29,6 +37,10 @@ router.post('/', (req, res, next) => {
 });
 
 router.get('/:id', (req, res, next) => {
+  if (!req.session.currentUser) {
+    return res.redirect('/auth/login');
+  }
+
   Booking.find({seller: req.params.id}).populate('warehouseAddress')
     .exec((err, booking) => {
       if (err) {

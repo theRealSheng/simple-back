@@ -5,6 +5,10 @@ const User = require('../models/user');
 const upload = require('../configs/multer');
 
 router.post('/', upload.single('file'), (req, res, next) => {
+  if (!req.session.currentUser) {
+    return res.redirect('/auth/login');
+  }
+
   const picture = `/uploads/${req.file.filename}`;
   const updates = {
     $set: {
